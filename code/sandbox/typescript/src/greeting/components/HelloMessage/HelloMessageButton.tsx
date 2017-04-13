@@ -1,10 +1,10 @@
 import * as React from 'react';
 import {SyntheticEvent} from "react";
 
-const HelloMessageButton = ({text, callback} : {text:string, callback : () => void}) => {
+const HelloMessageButton = ({text, onClicked} : {text:string, onClicked : () => void}) => {
     return <div>
         <button
-            onClick={() => callback()}>
+            onClick={() => onClicked()}>
             {text}
         </button>
     </div>

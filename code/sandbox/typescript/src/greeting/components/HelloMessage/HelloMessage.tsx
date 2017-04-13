@@ -39,7 +39,7 @@ this.state = {
                 focus={this.state.focus} onChange={(text : string) => updateGreeting(text)}/>
                 {/*<HelloMessageOutput greeting={greeting} repeat={repeat}/>*/}
                 <HelloMessageOutput {...this.props}/>
-                <HelloMessageButton callback={() => this.reset()} text="Clear"/>
+                <HelloMessageButton onClicked={() => this.reset()} text="Clear"/>
             </div>);
     }
     reset() {
