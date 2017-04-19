@@ -19,12 +19,12 @@ type Props = Partial<State> & {
 
 class HelloMessage extends React.Component<Props, any> {
 
-  constructor(props) {
-super(props);
-this.state = {
-  focus: false
-};
-  }
+    constructor(props) {
+        super(props);
+        this.state = {
+          focus: false
+        };
+    }
     render() {
         // ERROR: Type 'Readonly<{ children?: ReactNode; }> & Readonly<Props>' has no property 'updateGreting' and no string index signature.
         // const { greeting, repeat, updateGreting } = this.props;
